@@ -136,7 +136,8 @@ int main()
 		printf("Menu de opções:\n\n"); 
 		printf("1 - Registrar Nomes\n");
 		printf("2 - Consultar Nomes\n");
-		printf("3 - Deletar Nomes\n\n\n"); 
+		printf("3 - Deletar Nomes\n");
+		printf("4 - Sair\n\n\n");
 		printf("Escolha sua opção:"); //FM(Fim do Menu)
 	
 		scanf("%d", &opcao); //AEU(Armazenamento de escolha do usuário)
@@ -157,12 +158,16 @@ int main()
 			deletar();
 			break;
 			
+			case 4:
+			printf("Você escolheu a opção sair do sistema!\n\n");
+			return 0;
+			break;
+			
 			default:
 			printf("Essa opção não está disponível\n\n");
 			system("pause");
 			break; //variavel simplificada do comando if(fim)
 		}
-		
 		
 	}
 	
